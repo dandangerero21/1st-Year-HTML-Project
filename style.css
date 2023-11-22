@@ -1,0 +1,399 @@
+body, html {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-image: url(background.jpg);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-image: url(headerandfooterbackground.jpg);
+    background-size: cover;
+}
+footer {
+    top: 0;
+    width: 100%;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 10;
+    overflow: auto;
+}
+
+.footcontainer, .footcontainer a {
+    margin: 5px;
+    font-size: 15px;
+    text-decoration: none;
+    color: inherit;
+    color: white;
+}
+
+header {
+    top: 0;
+    width: 100%;
+    color: white;
+    padding: 15px 0;
+    display: flex;
+    text-align: center; 
+    justify-content: space-between;  
+    align-items: center; 
+    z-index: 10;
+}
+
+.nav {
+    margin-top: 15px;
+    display: flex;
+    text-align: right;
+}
+
+.nav a {
+    margin-right: 30px;
+}
+
+.details, .details1 {
+    float: none;
+    height: 375px;
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+footer {
+    bottom: 0;
+    top: auto;
+    z-index: 10;
+}
+
+.more {
+    width: 100%;
+    height: 150px;
+}
+
+header .logo {
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    width: 75px;
+    height: auto;
+}
+
+header a {
+    
+    margin: 5px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    margin: 0;
+}
+
+.name {
+    font-size: 5em;
+    text-align: center;
+    color: white;
+    font-family: Times New Roman, Comic Sans MS;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.price {
+    float: right;
+    background-color: black;
+    width: 20%;
+    height: auto;
+    margin-right: 10px;
+    text-align: right;
+    padding: 5px;
+    font-size: 1em;
+    font-family: Times New Roman, Comic Sans MS;
+    color: white;
+    border-style: solid;
+    border-color: white;
+}
+
+.specs {
+    width: 80%;
+    background-color: black;
+    box-sizing: border-box;
+    margin: 10px;
+    height: auto;
+    color: white;
+    border-style: solid;
+    border-color: white;
+}
+
+.buynow {
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+}
+
+.clickable-container, main, .gun2, .gun1, .container1 {
+    width: 80%;
+    margin: auto;
+    height: auto;
+    position: relative;
+    text-decoration: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+    transition: 0.3s ease;
+    z-index: 1;
+}
+
+.clickable-container, .gun2:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.clickable-container .background, .gun1 .background, .container1 .background {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0px 0px 20px rgba(31, 28, 28, 0.9);
+}
+
+.container1 {
+    height: auto;
+    position: relative;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+}
+
+.intro {
+    position: absolute;
+    color: white;
+    top: 0;
+    margin-top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 5em;
+    font-family: Times New Roman, Comic Sans MS;
+    text-shadow: 2px 2px 4px black;
+}
+
+.text-description {
+    position: absolute;
+    bottom: 70px;
+    left: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 3em;
+    font-family: Times New Roman, Comic Sans MS;
+    text-shadow: 2px 2px 4px black;
+}
+
+.text-description2, .gundescription, .intro2 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 2em;
+    font-family: Times New Roman, Comic Sans MS;
+    text-shadow: 2px 2px 4px black;
+}
+.auta {
+    font-size: 2em;
+    text-shadow: 
+        -1px -1px 0 #ffffff,  
+         1px -1px 0 #ffffff,
+        -1px  1px 0 #ffffff,
+         1px  1px 0 #ffffff;
+    color: black;
+}
+.cuta {
+    font-size: 2em;
+}
+.about {
+    line-height: 50px;
+    color: black;
+    margin:10px;
+}
+.about p, .contact p {
+    text-indent: 50px;
+}
+.contact {
+    line-height: 50px;
+    margin:10px;
+}
+.fb, .ig, .x {
+        float: left;
+        width: 32%;
+        height: 150px;
+        margin: 6px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.contactlogo {
+    position: absolute;
+    width: 50px;
+}
+.shapearound {
+    float: right;
+    shape-outside: square(50%);
+    margin: 10px;
+    width: 500px;
+}
+.specs, .browse, .about, .contact {
+    margin: 30px;
+    padding: 10px;
+    font-size: 2em;
+    margin-top: 10px;
+    color: white;
+    font-family: Times New Roman, Comic Sans MS;
+    transition: 0.3s ease;
+}
+
+.browse:hover {
+    background-color: #091005;
+}
+.specs {
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.browse {
+    position: absolute;
+    text-decoration: none;
+    background-color: grey;
+    color: inherit;
+    color: white;
+    bottom: 0;
+    margin-bottom: 30px;
+    font-size: 3em;
+    font-family: Times New Roman, Comic Sans MS;
+    text-shadow: 2px 2px 4px black;
+    border-radius: 9px;
+    border-color: white;
+    border-style: solid;
+}
+
+@media (max-width: 768px) {
+    main {
+        margin: 0;
+        width: 100%;
+    }
+
+    .intro {
+        font-size: 2em;
+    }
+    
+    header .logo {
+        width: 50px;
+    }
+    
+    .shapearound {
+        width: 200px;
+    } 
+
+    .price {
+        height: auto;
+        width: 30%;
+    }
+    
+    .nav {
+        flex-direction: column;
+    }
+    
+    .nav a {
+        margin-right: 10px;
+    }
+
+    .specs {
+        margin: auto;
+        height: auto;
+        width: 90%;
+    }
+    
+    .auta {
+        font-size: 1.5em;
+    }
+    
+    .cuta {
+        font-size: 1.5em;
+    }
+    
+    .linkcontainer {
+        position: relative;
+        width: 100%;
+    }
+    
+    .fb, .ig, .x {
+        float: left;
+        width: 25%;
+        height: 150px;
+        margin: 5px;
+    }
+
+    .buynow {
+        text-decoration: none;
+        color: inherit;
+        color: white;
+    }
+    
+    .about, .contact {
+        line-height: 30px;
+    }
+
+    .details {
+        height: 150px;
+    }
+
+    .details, .detail1 {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .name {
+        font-size: 2em;
+    }
+
+    .text-description {
+        bottom: 10px;
+        font-size: 1em;
+    }
+
+    .specs, .price, .about, .contact {
+        font-size: 1em;
+    }
+
+    .text-description2 {
+        display: none;
+    }
+
+    .gundescription {
+        font-size: 1em;
+    }
+
+    .intro2, .browse {
+        font-size: 1em;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    .official, .login, .register {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .more {
+        font-size: xx-large;
+    }
+}
