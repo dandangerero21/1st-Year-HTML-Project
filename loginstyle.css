@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  overflow: auto;
+}
+header, footer {
+    background-image: url(headerandfooterbackground.jpg);
+    background-size: cover;
+}
+header a {
+    
+    margin: 5px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-decoration: none;
+}
+.footcontainer, .footcontainer a {
+    margin: 5px;
+    font-size: 15px;
+    text-decoration: none;
+    color: inherit;
+    color: white;
+}
+.nav {
+  margin-top: 15px;
+  display: flex;
+  text-align: right;
+}
+
+.nav a {
+  margin-right: 30px;
+}
+footer {
+    top: 0;
+    width: 100%;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 10;
+    overflow: auto;
+}
+header {
+    top: 0;
+    width: 100%;
+    color: white;
+    padding: 15px 0;
+    display: flex;
+    text-align: center; 
+    justify-content: space-between;  
+    align-items: center; 
+    z-index: 10;
+}
+footer {
+    bottom: 0;
+    top: auto;
+    z-index: 10;
+}
+header .logo {
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    width: 75px;
+    height: auto;
+}
+
+header a {
+    
+    margin: 5px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-decoration: none;
+}
+body{
+  background-image: url(background.jpg);
+  overflow: hidden;
+}
+::selection{
+  background: rgba(26,188,156,0.3);
+}
+.container{
+  max-width: 440px;
+  padding: 0 20px;
+  margin: 170px auto;
+}
+.wrapper{
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+}
+.wrapper .title{
+  height: 90px;
+  background: black;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper form{
+  padding: 30px 25px 25px 25px;
+}
+.wrapper form .row{
+  height: 45px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.wrapper form .row input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 60px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+form .row input:focus{
+  border-color: #16a085;
+  box-shadow: inset 0px 0px 2px 2px rgba(26,188,156,0.25);
+}
+form .row input::placeholder{
+  color: #999;
+}
+.wrapper form .row i{
+  position: absolute;
+  width: 47px;
+  height: 100%;
+  color: #fff;
+  font-size: 18px;
+  background: black;
+  border: 1px solid black;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper form .pass{
+  margin: -8px 0 20px 0;
+}
+.wrapper form .pass a{
+  color: black;
+  font-size: 17px;
+  text-decoration: none;
+}
+.wrapper form .pass a:hover{
+  text-decoration: underline;
+}
+.wrapper form .button input{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 0px;
+  background: black;
+  border: 1px solid white;
+  cursor: pointer;
+}
+form .button input:hover{
+  background: black;
+}
+.wrapper form .signup-link{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 17px;
+}
+.wrapper form .signup-link a{
+  color: black;
+  text-decoration: none;
+}
+form .signup-link a:hover{
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+    header .logo {
+        width: 50px;
+    }
+    header h1 {
+        font-size: 20px;
+    }
+    .nav {
+      flex-direction: column;
+  }
+  
+  .nav a {
+      margin-right: 10px;
+  }
+
+}
